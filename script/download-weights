@@ -17,6 +17,7 @@ pipe = DiffusionPipeline.from_pretrained(
     "cerspense/zeroscope_v2_XL",
     torch_dtype=torch.float16,
     cache_dir=TMP_CACHE,
+    revision="d5ff9043c7cc7438f4c3906a050c79f7fabacb45"
 )
 
 pipe.save_pretrained(MODEL_CACHE + "/xl")
